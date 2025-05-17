@@ -59,12 +59,31 @@ This project was developed in collaboration with the **Karawang Tourism Office**
     git clone https://github.com/yourusername/your-repo-name.git
     cd your-repo-name
     ```
-2. composer install
-   npm install && npm run dev
-3. cp .env.example .env
-   php artisan key:generate
-4. DB_DATABASE={your_db} (soon db dummy)
-   DB_USERNAME=root
-   DB_PASSWORD=
-5. php artisan migrate --seed
-6. php artisan serve
+2. Install dependecy with composer
+    ```bash
+    composer install
+    ```
+3. Copy environment file and generate app key
+
+    ```bash
+    cp .env.example .env
+    php artisan key:generate
+    ```
+
+4. Set configurate database
+
+    ```bash
+    DB_DATABASE={your_db} (soon db dummy)
+    DB_USERNAME=root
+    DB_PASSWORD=
+    ```
+
+5. Run migrate database
+    ````bash
+    php artisan migrate --seed
+     ```
+    ````
+6. Run local server
+    ```bash
+    php artisan serve
+    ```
