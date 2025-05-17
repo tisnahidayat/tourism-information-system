@@ -82,7 +82,6 @@ This project was developed in collaboration with the **Karawang Tourism Office**
     ````bash
     php artisan migrate --seed
      ```
-    ````
 6. Run local server
     ```bash
     php artisan serve
